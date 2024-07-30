@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    padding: 20px;
+    background-color: #1e8449;
+    color: #fff;
+}
+
+.dashboard h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.dashboard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items horizontally */
+}
+
+.dashboard ul li {
+    margin-right: 20px; /* Add some space between list items */
+}
+
+.dashboard ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dashboard ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tb1{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tb1 thead{
+    background: #1e8449;
+    color: #fff;
+}
+.tb1 thead tr th{
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    letter-spacing: 0.2rem;
+    vertical-align: top;
+    border: 1px solid #aab7ab;
+}
+.tb1 tbody tr td{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    text-align: center;
+    border: 1px solid #aab7b8;
+}
+.tb1 tr:nth-child(even){
+    background: #ccc;
+}
+.tb1 tr:hover td{
+    background: #839192;
+    color: #000;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.btn {
+    background-color: #1e8449;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: end;
+}
+
+.btn:hover {
+    background-color: #167a43;
+}
+

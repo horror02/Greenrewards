@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000; /* Set background to black */
+}
+
+.user-pass {
+    width: 350px;
+    height: 600px;
+    background: linear-gradient(135deg, rgba(58, 58, 58, 0.85), rgba(34, 34, 34, 0.85)); /* Subdued dark gradient */
+    color: #fff;
+    border-radius: 40px;
+    padding: 30px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for the form */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Soft shadow for depth */
+}
+
+.user-pass .registration h1 {
+    font-size: 24px; /* Increase font size for visibility */
+    text-align: center;
+    color: #fff; /* White color for text */
+} 
+
+.user-pass .input {
+    width: 100%; /* Full width of the form container */
+    margin-top: 20px;
+}
+
+.input input, .input textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff; /* White bottom border for visibility */
+    padding: 10px 0; /* Padding for better usability */
+    color: #fff; /* White text for visibility */
+}
+
+.input input::placeholder, .input textarea::placeholder {
+    color: #ccc; /* Light grey for placeholder for contrast */
+}
+
+.user-pass .btn {
+    width: 100%;
+    height: 45px;
+    background: #037bfc; /* Bright blue for the button */
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0263d4; /* Darker blue on hover */
+}
+
+.nothing {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* White text for contrast */
+}
+
+.nothing a {
+    color: #aad4f5; /* Light blue link for aesthetics */
+    text-decoration: none;
+}
+
+.nothing a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #ff3860; /* Red for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}

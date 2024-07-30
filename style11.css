@@ -1,0 +1,283 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7e4;
+}
+
+.header {
+    background-color: #27ae60;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.header img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* Sidebar styling */
+.slide{
+    height: 100%;
+    width: 280px;
+    position: absolute;
+    background-image: url('logos.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire sidebar */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevents image from repeating */
+    transition: 0.5s ease;
+    transform: translateX(-280px);
+    
+}
+.logout-btn {
+    background-color: #b39265; /* White background */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 400px; /* Push the button to the bottom */
+    width: 200px; /* Adjust the width as needed */
+    margin-left: 35px;
+}
+
+.logout-btn:hover {
+    background-color: wheat; /* Lighter white on hover */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+h1{
+    color: #FBFCF8;
+    margin-top: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: white;
+    font-weight: 500;
+    padding: 5px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+    font-size: 20px; /* Adjust the font size */
+    font-weight: bold;
+    border: black;
+}
+ul li a img {
+    vertical-align: middle; /* Align the image vertically centered with text */
+    margin-right: 20px; /* Add some spacing between the image and text */
+    width: 30px; /* Adjust the width of the icons as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+
+ul li:hover a{
+    color: white;
+    background-color: green;
+}
+.sidebar input[type="checkbox"] {
+    display: none; /* Hide the checkbox input */
+    visibility: hidden;
+    -webkit-apperance: none;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 30px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* CSS for search container and input */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-container button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #27ae60;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.btn {
+    background-color: white; /* White background */
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Lighter white on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn.add-user-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn.edit-btn {
+    background-color: #2ecc71; /* Green background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn.edit-btn:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn.delete-btn {
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn.delete-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
